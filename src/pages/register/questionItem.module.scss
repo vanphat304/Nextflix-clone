@@ -1,0 +1,49 @@
+@import "../../style/variables.scss";
+
+@keyframes apearance {
+  from {
+    padding: 0px 60px 0px 30px;
+    height: 1px;
+    overflow: hidden;
+  }
+  to {
+    padding: 16px 60px 16px 30px;
+    height: 200px;
+  }
+}
+
+.questionItem {
+  margin: 8px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  background-color: $secondary-color;
+  cursor: pointer;
+  position: relative;
+  .questionText {
+    padding: 20px 60px 16px 30px;
+    font-size: 26px;
+    margin-bottom: 1px;
+    font-weight: 400;
+    position: relative;
+    width: 100%;
+    border: 0;
+    display: flex;
+    justify-content: space-between;
+  }
+  .questionIcon {
+    position: absolute;
+    right: 20px;
+    font-size: 32px;
+    font-weight: 300;
+  }
+}
+.answer {
+  transform: translateY(-6px);
+  background-color: $secondary-color;
+  padding: 30px;
+  font-size: 26px;
+  animation: apearance ease-in 0.2s;
+  //   transition: all ease-in 1s;
+}

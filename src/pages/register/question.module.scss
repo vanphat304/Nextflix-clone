@@ -1,0 +1,18 @@
+@import "../../style/variables.scss";
+.questionsContain {
+  border-top: solid 6px $secondary-color;
+  color: white;
+  .questions {
+    padding: 70px 45px 26px 45px;
+    .questionTitle {
+      font-size: 3.125rem;
+
+      margin-bottom: 3rem;
+      text-align: center;
+    }
+    .questionList {
+      width: 65%;
+      margin: 2em auto;
+    }
+  }
+}

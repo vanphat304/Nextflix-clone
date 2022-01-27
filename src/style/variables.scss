@@ -1,0 +1,39 @@
+$primary-color: #000;
+$secondary-color: #303030;
+$text-color: #e5e5e5;
+$white-color: #fff;
+$button-color: #e50914;
+
+$logo-size: 160px;
+
+$primary-text-size: 12px;
+
+@mixin button {
+  background-color: $button-color;
+  line-height: normal;
+  padding: 6px 24px;
+  font-weight: 400;
+  font-size: 18px;
+  border-radius: 3px;
+  outline: none;
+  border: none;
+  color: $white-color;
+}
+
+@mixin selection {
+  background: rgba($color: #000000, $alpha: 0.4);
+  border: 1px solid #aaa;
+  color: $white-color;
+  font-size: 18px;
+  padding: 6px 14px;
+  border-radius: 4px;
+}
+@mixin arrowUp {
+  content: "";
+  display: block;
+  border-width: 6px;
+  border-style: solid;
+  border-color: transparent transparent $white-color transparent;
+  position: absolute;
+  z-index: 8;
+}

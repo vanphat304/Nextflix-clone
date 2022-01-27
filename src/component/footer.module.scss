@@ -1,0 +1,52 @@
+@import "../style/variables.scss";
+.footer {
+  border-top: solid 6px #303030;
+
+  &__content {
+    max-width: 1000px;
+    padding: 70px 45px;
+    margin: 0 auto;
+    &__title {
+      display: block;
+      padding-bottom: 26px;
+    }
+    &__items {
+      display: flex;
+      .footerItem {
+        flex: 1;
+        a {
+          display: block;
+          padding-bottom: 20px;
+          font-size: 14px;
+          text-decoration: none;
+          color: #757575;
+        }
+      }
+    }
+  }
+}
+
+.button {
+  position: relative;
+  select {
+    @include selection;
+    display: block;
+    margin: 26px 0;
+    border: solid 1px #757575;
+    padding: 16px 44px;
+    font-weight: 100;
+    outline: none;
+    font-size: 16px;
+    color: #757575;
+
+    option {
+      background: #000;
+    }
+  }
+  &__icon {
+    position: absolute;
+    top: 50%;
+    left: 12px;
+    transform: translateY(-50%);
+  }
+}

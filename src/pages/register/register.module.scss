@@ -1,0 +1,119 @@
+@import "../../style/variables.scss";
+.register {
+  background: #000;
+  overflow: hidden;
+  .wrapBanner {
+    .header {
+      padding-top: 20px;
+      margin: 0 56px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 5;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      &__logo {
+        width: $logo-size;
+        img {
+          width: 100%;
+        }
+      }
+      &__buttons {
+        button {
+          @include button;
+        }
+        select {
+          @include selection;
+          margin-right: 30px;
+          outline: none;
+        }
+      }
+    }
+    .register__detail {
+      color: $white-color;
+      z-index: 6;
+      position: absolute;
+      width: 100%;
+      height: 100vh;
+      top: 250px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      font-weight: 300;
+      h1 {
+        font-size: 52px;
+        width: 640px;
+        text-align: center;
+        font-weight: 300;
+      }
+      p {
+        font-size: 28px;
+        padding: 5px 0 12px 0;
+        margin: 12px 0;
+      }
+      span {
+        padding-bottom: 20px;
+        font-size: 1.2rem;
+      }
+      .input {
+        width: 640px;
+        display: flex;
+        justify-content: center;
+        height: 60px;
+        input {
+          flex: 8;
+          font-size: 18px;
+          font-weight: 400;
+          padding-left: 12px;
+        }
+        button {
+          flex: 4;
+          border: none;
+          background: $button-color;
+          font-size: 30px;
+          color: $white-color;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+
+.formResgister {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  span {
+    padding-bottom: 10px;
+    font-size: 1.2rem;
+    color: $white-color;
+    display: block;
+  }
+  .input {
+    width: 640px;
+    display: flex;
+    justify-content: center;
+    height: 60px;
+    input {
+      flex: 8;
+      font-size: 18px;
+      font-weight: 400;
+      padding-left: 12px;
+    }
+    button {
+      flex: 4;
+      border: none;
+      background: $button-color;
+      font-size: 30px;
+      color: $white-color;
+      cursor: pointer;
+    }
+  }
+}
+
+.padBot5 {
+  padding-bottom: 50px;
+}
